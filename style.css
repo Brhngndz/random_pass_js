@@ -1,0 +1,72 @@
+html {
+  background: #da4453;
+  background: -webkit-linear-gradient(to right, #101920, #1b3c45);
+  background: linear-gradient(to right, #101920, #1b3c45);
+  cursor: none;
+}
+
+.cursor {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  top: 50%;
+  left: 50%;
+  margin: -24px 0px 0px -24px;
+  border: 3px solid #0fa;
+  border-radius: 100px;
+  backface-visibility: hidden;
+  transition: transform 0.3s ease-out;
+  pointer-events: none;
+}
+.cursor.is-moving {
+  transform: scale(0.7);
+}
+.btn {
+  cursor: none;
+  padding: 0.8rem;
+  border: none;
+  background-color: #101920;
+  color: #ffe717;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+#sifreC {
+  padding: 2rem;
+
+  position: absolute;
+  margin-top: 16rem;
+  font-weight: 700;
+}
+.container {
+  color: #ffe600;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  position: relative;
+  top: 17rem;
+  flex-direction: column;
+  border: #ffe81788 2px solid;
+  width: 60%;
+  text-align: center;
+  left: 18.7%;
+}
+.fa-arrow-left {
+  position: absolute;
+  top: 89%;
+  left: 57%;
+}
+.fa-arrow-right {
+  position: absolute;
+  top: 89%;
+  left: 41%;
+}
+
+#timer {
+  position: absolute;
+  left: 75%;
+  font-size: 11rem;
+  text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 8px #fff, 0 0 16px #0fa,
+    0 0 32px #0fa, 0 0 525px #0fa, 0 0 72px #0fa, 0 0 90px #0fa;
+}
