@@ -48,6 +48,7 @@ function generatePassword() {
       document.getElementById("timer").innerHTML = "10";
     }
   }, 1000);
+  btnDisable();
 }
 
 // http://ahrengot.com/tutorials/greensock-javascript-animation
@@ -78,4 +79,11 @@ function myF() {
   let L = document.createElement("i");
   L.setAttribute("class", "fa-solid fa-arrow-left");
   console.log(L);
+}
+
+function btnDisable(id) {
+  document.getElementById("myBtn").disabled = true;
+  setTimeout(function () {
+    document.getElementById("myBtn").disabled = false;
+  }, 10000);
 }
