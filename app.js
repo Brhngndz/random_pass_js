@@ -73,14 +73,6 @@ function moveCursor(e) {
 
 $(window).on("mousemove", moveCursor);
 
-let b = document.querySelector("btn");
-b.addEventListener("click", myF());
-function myF() {
-  let L = document.createElement("i");
-  L.setAttribute("class", "fa-solid fa-arrow-left");
-  console.log(L);
-}
-
 function btnDisable(id) {
   document.getElementById("myBtn").disabled = true;
   setTimeout(function () {
