@@ -51,6 +51,13 @@ function generatePassword() {
   btnDisable();
 }
 
+function btnDisable(id) {
+  document.getElementById("myBtn").disabled = true;
+  setTimeout(function () {
+    document.getElementById("myBtn").disabled = false;
+  }, 10000);
+}
+
 // http://ahrengot.com/tutorials/greensock-javascript-animation
 
 var $cursor = $(".cursor");
@@ -72,10 +79,3 @@ function moveCursor(e) {
 }
 
 $(window).on("mousemove", moveCursor);
-
-function btnDisable(id) {
-  document.getElementById("myBtn").disabled = true;
-  setTimeout(function () {
-    document.getElementById("myBtn").disabled = false;
-  }, 10000);
-}
